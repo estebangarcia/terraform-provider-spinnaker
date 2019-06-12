@@ -1,0 +1,2 @@
+[url "ssh://git@stash.synchronoss.net:7999/"]
+    insteadOf = https://stash.synchronoss.net/scm/

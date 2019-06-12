@@ -1,3 +1,7 @@
+# THIS IS A FORK FROM https://github.com/armory-io/terraform-provider-spinnaker
+
+---
+
 [![CircleCI](https://circleci.com/gh/armory-io/terraform-provider-spinnaker/tree/master.svg?style=svg)](https://circleci.com/gh/armory-io/terraform-provider-spinnaker/tree/master)
 
 # terraform-provider-spinnaker

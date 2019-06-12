@@ -1,8 +1,8 @@
 package spinnaker
 
 import (
-	spin_config "github.com/estebangarcia/spin/config"
-	gate "github.com/estebangarcia/spin/gateclient"
+	spin_config "stash.synchronoss.net/infrastructure/spin/config"
+	gate "stash.synchronoss.net/infrastructure/spin/gateclient"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 

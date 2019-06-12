@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	gate "github.com/estebangarcia/spin/gateclient"
 	"github.com/mitchellh/mapstructure"
+	gate "stash.synchronoss.net/infrastructure/spin/gateclient"
 )
 
 func GetApplication(client *gate.GatewayClient, applicationName string, dest interface{}) error {

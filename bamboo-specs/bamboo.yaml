@@ -1,0 +1,19 @@
+---
+project:
+  key: CAS
+  plan:
+    key: TFSPIN
+    name: Build Terraform Provider for Spinnaker
+
+stages:
+  - jobs:
+    - scripts:
+       - ./scripts/build.sh
+      requirements:
+       - system.jdk.JDK 1.8
+       - system.docker.executable
+      artifacts:
+        - name: Terraform Provider MacOS
+          path: artifacts/darwin_amd64/terraform-provider-spinnaker-*
+        - name: Terraform Provider Linux
+          path: artifacts/linux_amd64/terraform-provider-spinnaker-*
