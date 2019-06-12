@@ -1,4 +1,4 @@
-module github.com/armory-io/terraform-provider-spinnaker
+module stash.synchronoss.net/infrastructure/terraform-provider-spinnaker
 
 go 1.12
 
@@ -12,7 +12,6 @@ require (
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d
 	github.com/bgentry/speakeasy v0.1.0
 	github.com/blang/semver v0.0.0-20190414102917-ba2c2ddd8906
-	github.com/estebangarcia/spin v0.0.0
 	github.com/fatih/color v1.7.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/golang/protobuf v1.3.1
@@ -50,7 +49,6 @@ require (
 	github.com/posener/complete v1.2.1
 	github.com/spf13/pflag v1.0.3
 	github.com/spf13/viper v1.4.0 // indirect
-	github.com/spinnaker/spin v0.4.0 // indirect
 	github.com/ulikunitz/xz v0.5.6
 	github.com/zclconf/go-cty v0.0.0-20190516203816-4fecf87372ec
 	go.opencensus.io v0.22.0
@@ -66,6 +64,5 @@ require (
 	google.golang.org/grpc v1.21.0
 	gopkg.in/yaml.v2 v2.2.2
 	k8s.io/client-go v11.0.0+incompatible
+	stash.synchronoss.net/infrastructure/spin v0.5.0
 )
-
-replace github.com/estebangarcia/spin v0.0.0 => ./vendor/github.com/estebangarcia/spin

@@ -17,7 +17,7 @@ jobs:
     #### expecting it in the form of
     ####   /go/src/github.com/circleci/go-tool
     ####   /go/src/bitbucket.org/circleci/go-tool
-    working_directory: /go/src/github.com/armory-io/terraform-provider-spinnaker
+    working_directory: /go/src/stash.synchronoss.net/infrastructure/terraform-provider-spinnaker
     steps:
       - checkout
 

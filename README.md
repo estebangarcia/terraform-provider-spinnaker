@@ -34,8 +34,8 @@ resource "spinnaker_pipeline" "terraform_example" {
 _Requires Go and [Dep](https://github.com/golang/dep#installation) be installed on the system._
 
 ```
-$ go get github.com/armory-io/terraform-provider-spinnaker
-$ cd $GOPATH/src/github.com/armory-io/terraform-provider-spinnaker
+$ go get stash.synchronoss.net/infrastructure/terraform-provider-spinnaker
+$ cd $GOPATH/src/stash.synchronoss.net/infrastructure/terraform-provider-spinnaker
 $ dep ensure
 $ go build
 ```

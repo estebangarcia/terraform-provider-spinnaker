@@ -7,7 +7,7 @@ import (
 	"log"
 	"reflect"
 
-	"github.com/armory-io/terraform-provider-spinnaker/spinnaker/api"
+	"stash.synchronoss.net/infrastructure/terraform-provider-spinnaker/spinnaker/api"
 	"github.com/ghodss/yaml"
 	"github.com/hashicorp/terraform/helper/schema"
 )

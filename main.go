@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/armory-io/terraform-provider-spinnaker/spinnaker"
+	"stash.synchronoss.net/infrastructure/terraform-provider-spinnaker/spinnaker"
 	"github.com/hashicorp/terraform/plugin"
 	"github.com/hashicorp/terraform/terraform"
 )

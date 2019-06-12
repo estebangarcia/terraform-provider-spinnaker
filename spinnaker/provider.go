@@ -1,8 +1,6 @@
 package spinnaker
 
 import (
-	"log"
-
 	spin_config "github.com/estebangarcia/spin/config"
 	gate "github.com/estebangarcia/spin/gateclient"
 	"github.com/hashicorp/terraform/helper/schema"
@@ -67,8 +65,6 @@ func providerConfigureFunc(data *schema.ResourceData) (interface{}, error) {
 	if server != "" {
 		cfg.Gate.Endpoint = server
 	}
-
-	log.Printf("%v", cfg)
 
 	if err != nil {
 		return nil, err
