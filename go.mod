@@ -22,6 +22,7 @@ require (
 	github.com/mattn/go-isatty v0.0.8 // indirect
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
+	github.com/mitchellh/gox v1.0.1 // indirect
 	github.com/mitchellh/hashstructure v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2
 	github.com/mitchellh/reflectwalk v1.0.1 // indirect
@@ -37,5 +38,5 @@ require (
 	golang.org/x/sys v0.0.0-20190602015325-4c4f7f33c9ed // indirect
 	google.golang.org/appengine v1.6.0 // indirect
 	google.golang.org/genproto v0.0.0-20190530194941-fb225487d101 // indirect
-	stash.synchronoss.net/infrastructure/spin v0.5.0
+	stash.synchronoss.net/infrastructure/spin v0.5.2
 )

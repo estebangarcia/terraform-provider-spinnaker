@@ -91,7 +91,7 @@ func DeleteAppliation(client *gate.GatewayClient, applicationName string) error 
 		"description": fmt.Sprintf("Delete Application: %s", applicationName),
 	}
 
-	_, resp, err := client.TaskControllerApi.TaskUsingPOST1(client.Context, deleteAppTask)
+	ref, resp, err := client.TaskControllerApi.TaskUsingPOST1(client.Context, deleteAppTask)
 
 	if err != nil {
 		return err
@@ -99,6 +99,24 @@ func DeleteAppliation(client *gate.GatewayClient, applicationName string) error 
 
 	if resp.StatusCode != http.StatusOK {
 		return fmt.Errorf("Encountered an error deleting application, status code: %d\n", resp.StatusCode)
+	}
+
+	toks := strings.Split(ref["ref"].(string), "/")
+	id := toks[len(toks)-1]
+
+	task, resp, err := client.TaskControllerApi.GetTaskUsingGET1(client.Context, id)
+	attempts := 0
+	for (task == nil || !taskCompleted(task)) && attempts < 5 {
+		toks := strings.Split(ref["ref"].(string), "/")
+		id := toks[len(toks)-1]
+
+		task, resp, err = client.TaskControllerApi.GetTaskUsingGET1(client.Context, id)
+		attempts++
+		time.Sleep(time.Duration(attempts*attempts) * time.Second)
+	}
+
+	if err != nil {
+		return err
 	}
 
 	return nil
